@@ -44,23 +44,23 @@ class App extends Component {
 
     return (
       <div className="App">
-       <h1>This is react app</h1>
-       <p>This is really working!@!!!!</p>
-       <button 
+        <h1>This is react app</h1>
+        <p>This is really working!@!!!!</p>
+        <button 
           style={ style }
           onClick={ () => this.switchNameHandler('Maximilian') }>Switch name</button>
-       <Person 
-         name={ this.state.persons[0].name } 
-         age={ this.state.persons[0].age }/>
-       <Person 
-         name={ this.state.persons[1].name } 
-         click={ this.switchNameHandler.bind(this, 'Max!') }
-         age={ this.state.persons[1].age } 
-         changed={ this.namechangedHandler }
-         >Quiero Taco Bell</Person>
-       <Person 
-         name={ this.state.persons[2].name } 
-         age={ this.state.persons[2].age }/>
+        <Person 
+          name={ this.state.persons[0].name } 
+          age={ this.state.persons[0].age }/>
+        <Person 
+          name={ this.state.persons[1].name } 
+          click={ this.switchNameHandler.bind(this, 'Max!') }
+          age={ this.state.persons[1].age } 
+          changed={ this.namechangedHandler }
+        >Quiero Taco Bell</Person>
+        <Person 
+          name={ this.state.persons[2].name } 
+          age={ this.state.persons[2].age }/>
       </div>
     );
   }
